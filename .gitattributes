@@ -1,0 +1,26 @@
+
+# Force TypeScript detection
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+
+# Don't count CSS/styling files in language stats
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+*.sass linguist-detectable=false
+*.less linguist-detectable=false
+*.html linguist-detectable=false
+
+# Ignore build/generated files
+build/* linguist-generated=true
+dist/* linguist-generated=true
+public/* linguist-generated=true
+*.min.js linguist-generated=true
+*.bundle.js linguist-generated=true
+
+# Mark documentation files
+*.md linguist-documentation=true
+docs/* linguist-documentation=true
+
+# Ignore node_modules and vendor code
+node_modules/* linguist-vendored=true
+vendor/* linguist-vendored=true
